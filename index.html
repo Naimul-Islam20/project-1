@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Search</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row mb-4 justify-content-center bg-info" style="height: 70px;">
+            <div class="col-8 " style="margin-top: 10px;">
+                <div class="input-group mt-1">
+                    <p id="clock">00:00:00</p>
+                    <input type="text" id="searchBar" class="form-control py-2 pe-5" placeholder="Search for fruits...">
+                    
+                    <button id="colorChange" class="ms-5 rounded" onclick="themeChange()">Dark Mode</button>
+                </div>
+                
+            </div>
+           
+        </div>
+
+
+        <div class="container">
+
+            <div id="result" class="row">
+                <div class=" col-lg-4 col-4 col-sm-6 fruit" data-name="Lychee">
+                    <div class="card">
+                        <div class="f">
+                            <img src="img/lichi.jpg" alt="Orange" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <strong>Lychee</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Strawberry">
+                    <div class="card">
+                        <img src="img/str.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Strawberry</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Pome">
+                    <div class="card">
+                        <img src="img/pome.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Pome</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Pineapple">
+                    <div class="card">
+                        <img src="img/pineapple.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Pineapple</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Banana">
+                    <div class="f">
+                        <div class="card">
+                            <img src="img/bana.jpg" alt="Banana" class="card-img-top">
+                            <div class="card-body text-center">
+                                <strong>Banana</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Mango">
+                    <div class="f">
+                        <div class="card">
+                            <img src="img/meng.webp" alt="Mango" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <strong>Mango</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Grapes">
+                    <div class="card">
+                        <img src="img/grapes.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Grapes</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Jackfruit">
+                    <div class="card">
+                        <img src="img/kathal.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Jackfruit</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Papaya">
+                    <div class="card">
+                        <img src="img/papaya.jpg" alt="" class="img-fluid card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Papaya</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Coconut">
+                    <div class="card">
+                        <img src="img/coconut.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Coconut</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Black plum">
+                    <div class="card">
+                        <img src="img/black plum_.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Black plum</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Watermelon">
+                    <div class="card">
+                        <img src="img/watermelon.jpg" alt="Orange" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Watermelon</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Orange">
+                    <div class="f">
+                        <div class="card">
+                            <img src="img/orenge.jpg" alt="Orange" class="card-img-top">
+                            <div class="card-body text-center">
+                                <strong>Orange</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4  col-sm-6 fruit" data-name="Apple">
+                    <div class="card">
+                        <img src="img/apple.jpg" alt="Apple" class="card-img-top">
+                        <div class="card-body text-center">
+                            <strong>Apple</strong>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

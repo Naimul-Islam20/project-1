@@ -1,0 +1,103 @@
+
+*{
+    border: 0;
+    margin: 0;
+}
+
+
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+}
+input{
+    border-radius: 5px 0 0 5px !important;
+}
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #000 !important;
+}
+
+.fruit {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+
+
+    
+}
+
+.fruit img {
+    width: 325x;
+    height: 200px;
+   
+    object-fit: cover;
+}
+.card{
+    background-color: white;
+    transition: all 0.1s ease;
+    border: 0;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.15);
+}
+/* 
+#searchBar{
+    color: w;
+} */
+button#searchButton {
+   
+    font-size: 22px;
+    border-radius: 0 5px 5px 0 !important;
+  
+}
+
+button:hover {
+    background-color: rgb(243, 239, 239);
+    transition: background-color 0.3s ease;
+}
+
+.col-4 {
+    margin-bottom: 20px; /* spacing between columns */
+}
+
+/* !---- theme change event */
+ 
+
+.dark-mode{
+    background-color:#0c0c0c;
+    color: white;
+}
+.dark-mode .card{
+    background-color: #0c0c0c;
+    color: white;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode #searchBar{
+    background-color: #0c0c0c;
+    color: white;
+}
+.dark-mode button{
+    background-color: #0c0c0c;
+    color: white;
+}
+.dark-mode .fruit{
+    background-color: #0c0c0c;
+}
+#clock{
+    background-color: white;
+    margin-right: 39px;
+    border-radius: 2px;
+    font-size: 20px;
+    padding-right: 3px;
+}
+.dark-mode #clock{
+    background-color: #0c0c0c;
+}
